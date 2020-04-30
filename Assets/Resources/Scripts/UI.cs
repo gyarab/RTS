@@ -7,77 +7,329 @@ using UnityEngine.EventSystems;
 public class UI : MonoBehaviour
 {
 
-    Font ArialFont;
+    public Font ArialFont;
+    public GameObject BuilderPanel;
+    public GameObject SoldierPanel;
+    public GameObject WarriorPanel;
+    public GameObject RangeUnitPanel;
     private float angleX = 70;
-    BuildBuilding Build = new BuildBuilding();
+    public BuildBuilding Build;
+    public Dictionary<string, GameObject> Panels;
+    public Sprite UIbackgroud;
+    public GameObject myGO;
+
+    public GameObject TextBuilderButton;
+
+    public ResUI resUI;
+
+    public GameObject StorageButton;
+    public GameObject TextStorageButton;
+
+    public GameObject HospitalButton;
+    public GameObject TextHospitalButton;
+
+    public GameObject BarracsButton;
+    public GameObject TextBarracsButton;
+
+    public GameObject SoldierText;
+    public GameObject WarriroText;
+    public GameObject RangeUnitText;
+
 
    
 
+
+    public void createButton(GameObject Button,
+                             GameObject parent,
+                             string name,
+                             Vector3 position,
+                             Vector2 anchorMax,
+                             Vector2 anchorMin,
+                             Vector2 pivot,
+                             Vector2 offsetMax,
+                             Vector2 offsetMin)
+    {
+        Button.transform.parent = parent.transform;
+        Button.name = name;
+        Button.AddComponent<RectTransform>();
+        Button.AddComponent<Button>();
+        Button.AddComponent<Image>();
+        Button.GetComponent<Button>().targetGraphic = Button.GetComponent<Image>();
+        Button.GetComponent<RectTransform>().anchorMax = anchorMax;
+        Button.GetComponent<RectTransform>().anchorMin = anchorMin;
+        Button.GetComponent<RectTransform>().pivot = pivot;
+        Button.GetComponent<RectTransform>().position = position;
+        Button.GetComponent<RectTransform>().offsetMax = offsetMax;
+        Button.GetComponent<RectTransform>().offsetMin = offsetMin;
+        
+    }
+
+
+
+    public void CreatePanel
+                        (
+                        GameObject obj,
+                        string name,
+                        GameObject parent,
+                        Sprite sprite,
+                        float transparency,
+                        Vector3 position,
+                        Vector2 anchorMax,
+                        Vector2 anchorMin,
+                        Vector2 pivot,
+                        Vector2 offsetMax,
+                        Vector2 offsetMin,
+                        UI ui
+                        )
+    {
+        
+        obj.transform.parent = parent.transform;
+
+        obj.name = name;
+        obj.AddComponent<CanvasRenderer>();
+        obj.AddComponent<RectTransform>();
+        obj.AddComponent<Image>();
+        obj.GetComponent<Image>().sprite = sprite;
+        obj.GetComponent<Image>().color = new Color(0f, 0f, 0f, transparency);
+        obj.GetComponent<RectTransform>().anchorMax = anchorMax;
+        obj.GetComponent<RectTransform>().anchorMin = anchorMin;
+        obj.GetComponent<RectTransform>().pivot = pivot;
+        obj.GetComponent<RectTransform>().position = position;
+        obj.GetComponent<RectTransform>().offsetMax = offsetMax;
+        obj.GetComponent<RectTransform>().offsetMin = offsetMin;
+
+        ui.Panels[name] = obj;
+        obj.SetActive(false);
+
+       
+    }
+
+    public void CreateSubPanel
+                       (
+                       GameObject obj,
+                       string name,
+                       GameObject parent,
+                       Sprite sprite,
+                       float transparency,
+                       Vector3 position,
+                       Vector2 anchorMax,
+                       Vector2 anchorMin,
+                       Vector2 pivot,
+                       Vector2 offsetMax,
+                       Vector2 offsetMin,
+                       UI ui
+                       )
+    {
+
+        obj.transform.parent = parent.transform;
+
+        obj.name = name;
+        obj.AddComponent<CanvasRenderer>();
+        obj.AddComponent<RectTransform>();
+        obj.AddComponent<Image>();
+        obj.GetComponent<Image>().sprite = sprite;
+        obj.GetComponent<Image>().color = new Color(0f, 0f, 0f, transparency);
+        obj.GetComponent<RectTransform>().anchorMax = anchorMax;
+        obj.GetComponent<RectTransform>().anchorMin = anchorMin;
+        obj.GetComponent<RectTransform>().pivot = pivot;
+        obj.GetComponent<RectTransform>().position = position;
+        obj.GetComponent<RectTransform>().offsetMax = offsetMax;
+        obj.GetComponent<RectTransform>().offsetMin = offsetMin;
+
+        
+
+
+    }
+
+
+    public void CreateText(GameObject Text,
+                           GameObject parent,
+                           string name,
+                           Font font,
+                           Vector2 anchorMax,
+                           Vector2 anchorMin,
+                           Vector2 offsetMax,
+                           Vector2 offsetMin)
+    {
+        Text.transform.parent = parent.transform;
+        Text.name = name;
+        
+
+        Text text = Text.AddComponent<Text>();
+        text.font = ArialFont;
+        text.text = name;
+        text.color = Color.black;
+        text.fontSize = 24;
+        text.alignment = TextAnchor.MiddleCenter;
+       
+
+
+        // Text position
+        RectTransform rectTransform = text.GetComponent<RectTransform>();
+        rectTransform.localPosition = new Vector3(0, 0, 0);
+        rectTransform.anchorMax = anchorMax;
+        rectTransform.anchorMin = anchorMin;
+        rectTransform.offsetMax = offsetMax;
+        rectTransform.offsetMin = offsetMin;
+
+
+    }
+
+
+    private void Awake()
+    {
+        Panels = new Dictionary<string, GameObject>();
+        UIbackgroud = Resources.Load<Sprite>("Sprites/Stone") as Sprite;
+        ArialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
+        myGO = new GameObject();
+        resUI = GetComponent<ResUI>();
+
+        Canvas myCanvas;
+
+
+
+
+
+        // Canvas
+
+        myGO.name = "TestCanvas";
+        myGO.AddComponent<Canvas>();
+
+        myCanvas = myGO.GetComponent<Canvas>();
+        myGO.AddComponent<CanvasScaler>();
+        myGO.AddComponent<GraphicRaycaster>();
+        myCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+
+        // vytvori eventsystem k fungovani tlacitka
+        GameObject listener = new GameObject("EventSystem", typeof(EventSystem));
+        listener.AddComponent<StandaloneInputModule>();
+        listener.AddComponent<BaseInput>();
+    }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Sprite UIbackgroud = Resources.Load<Sprite>("Sprites/Stone") as Sprite;
-
-
-
-        ArialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
-
-        GameObject myGO;
-        GameObject myText;
-        Canvas myCanvas;
-        Text text;
-        RectTransform rectTransform;
-
-        // Canvas
-        myGO = new GameObject();
-        myGO.name = "TestCanvas";
-        myGO.AddComponent<Canvas>();
-
-        myCanvas = myGO.GetComponent<Canvas>();
-        myCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        myGO.AddComponent<CanvasScaler>();
-        myGO.AddComponent<GraphicRaycaster>();
-
-        // Text
-        myText = new GameObject();
-        myText.transform.parent = myGO.transform;
-        myText.name = "wibble";
-
-        text = myText.AddComponent<Text>();
-        text.font = ArialFont;
-        text.text = "ahoj";
-        text.fontSize = 100;
-
-
-        // Text position
-        rectTransform = text.GetComponent<RectTransform>();
-        rectTransform.localPosition = new Vector3(0, 0, 0);
-        rectTransform.sizeDelta = new Vector2(400, 200);
 
         
 
 
+        StorageButton = new GameObject();
+        TextStorageButton = new GameObject();
+
+
+        BuilderPanel = new GameObject();
+        SoldierPanel = new GameObject();
+        RangeUnitPanel = new GameObject();
+        WarriorPanel = new GameObject();
+
+        HospitalButton = new GameObject();
+        TextHospitalButton = new GameObject();
+
+        BarracsButton = new GameObject();
+        TextBarracsButton = new GameObject();
+
+        TextBuilderButton = new GameObject();
+
+        SoldierText = new GameObject();
+        WarriroText = new GameObject();
+        RangeUnitText = new GameObject();
+
+
+
+
+
+        
+        
+
+        // Text
+     /*   myText = new GameObject();
+        
+
+        */
+
+
         //panel
 
-        GameObject LeftPanel = new GameObject();
-        LeftPanel.transform.parent = myGO.transform;
-        LeftPanel.name = "Panel";
-        LeftPanel.AddComponent<CanvasRenderer>();
-        LeftPanel.AddComponent<RectTransform>();
-        LeftPanel.AddComponent<Image>();
-        LeftPanel.GetComponent<Image>().sprite = UIbackgroud;
-        LeftPanel.GetComponent<Image>().color = new Color (0,0,0,0.5f);
-        LeftPanel.GetComponent<RectTransform>().anchorMax = new Vector2(0.33f, 0.33f);
-        LeftPanel.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 0f);
-        LeftPanel.GetComponent<RectTransform>().pivot = new Vector2(0f, 0f);
-        LeftPanel.GetComponent<RectTransform>().position = new Vector3(0f, 0f, 0f);
-        LeftPanel.GetComponent<RectTransform>().right = new Vector3(0f, 0f, 0f);
-        LeftPanel.GetComponent<RectTransform>().offsetMax = new Vector2(0f, 0f);
+        CreatePanel(
+                    BuilderPanel,
+                    "BuilderPanel",
+                    myGO,
+                    UIbackgroud,
+                    0.5f,
+                    new Vector3(0f, 0f, 0f),
+                    new Vector2(0.30f, 0.30f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    GetComponent<UI>());
+                    
+        CreatePanel(
+                   SoldierPanel,
+                   "SoldierPanel",
+                   myGO,
+                   UIbackgroud,
+                   0.5f,
+                   new Vector3(0f, 0f, 0f),
+                   new Vector2(0.30f, 0.30f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   GetComponent<UI>());
+
+        CreatePanel(
+                   WarriorPanel,
+                   "WarriorPanel",
+                   myGO,
+                   UIbackgroud,
+                   0.5f,
+                   new Vector3(0f, 0f, 0f),
+                   new Vector2(0.30f, 0.30f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   GetComponent<UI>());
+
+        CreatePanel(
+                   RangeUnitPanel,
+                   "RangeUnitPanel",
+                   myGO,
+                   UIbackgroud,
+                   0.5f,
+                   new Vector3(0f, 0f, 0f),
+                   new Vector2(0.30f, 0.30f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   new Vector2(0f, 0f),
+                   GetComponent<UI>());
+
+        SoldierPanel.SetActive(false);
 
 
 
+
+
+        /*  BuilderPanel = new GameObject();
+          BuilderPanel.transform.parent = myGO.transform;
+          BuilderPanel.name = "PanelBuilder";
+          BuilderPanel.AddComponent<CanvasRenderer>();
+          BuilderPanel.AddComponent<RectTransform>();
+          BuilderPanel.AddComponent<Image>();
+          BuilderPanel.GetComponent<Image>().sprite = UIbackgroud;
+          BuilderPanel.GetComponent<Image>().color = new Color (0,0,0,0.5f);
+          BuilderPanel.GetComponent<RectTransform>().anchorMax = new Vector2(0.33f, 0.33f);
+          BuilderPanel.GetComponent<RectTransform>().anchorMin = new Vector2(0f, 0f);
+          BuilderPanel.GetComponent<RectTransform>().pivot = new Vector2(0f, 0f);
+          BuilderPanel.GetComponent<RectTransform>().position = new Vector3(0f, 0f, 0f);
+
+          BuilderPanel.GetComponent<RectTransform>().offsetMax = new Vector2(0f, 0f);
+          */
+
+        /*
         GameObject MiddlePanel = new GameObject();
         MiddlePanel.transform.parent = myGO.transform;
         MiddlePanel.name = "Panel";
@@ -109,14 +361,14 @@ public class UI : MonoBehaviour
         RightPanel.GetComponent<RectTransform>().right = new Vector3(0f, 0f, 0f);
         RightPanel.GetComponent<RectTransform>().offsetMax = new Vector2(0f, 0f);
         RightPanel.GetComponent<RectTransform>().offsetMin = new Vector2(0f, 0f);
+        */
+        
 
-
-
-
+        
         //button 
         GameObject myButton = new GameObject();
-        myButton.transform.parent = LeftPanel.transform;
-        myButton.name = "Button";
+        myButton.transform.parent = BuilderPanel.transform;
+        myButton.name = "Building";
         myButton.AddComponent<RectTransform>();
         myButton.AddComponent<Button>();
         myButton.AddComponent<Image>();
@@ -126,152 +378,153 @@ public class UI : MonoBehaviour
         myButton.GetComponent<RectTransform>().pivot = new Vector2(0f, 0f);
         myButton.GetComponent<RectTransform>().position = new Vector3(0f, 0f, 0f);
         myButton.GetComponent<RectTransform>().offsetMax = new Vector2(0f, 0f);
-        myButton.GetComponent<Button>().onClick.AddListener(() => {Build.Update() ; });
+        myButton.GetComponent<RectTransform>().offsetMin = new Vector2(0f, 0f);
+        myButton.GetComponent<Button>().onClick.AddListener(() => {Build.SetBuilding(myButton.name) ; });
 
-        // vytvori eventsystem k fungovani tlacitka
-        GameObject listener = new GameObject("EventSystem", typeof(EventSystem));
-        listener.AddComponent<StandaloneInputModule>();
-        listener.AddComponent<BaseInput>();
-        //  myButton.GetComponent<RectTransform>().right = new Vector3(0f, 0f, 0f);
-        // myButton.GetComponent<RectTransform>().rect.Set(0f, 0f, 0f, 0f);
+        CreateText(TextBuilderButton,
+                    myButton,
+                    "Main Building  " +
+                    "5KW " +
+                    "3KG",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+        TextBuilderButton.GetComponent<Text>().fontSize = 18;
+
+        createButton(StorageButton,
+                        BuilderPanel,
+                        "Storage",
+                        new Vector3(0f, 0f, 0f),
+                        new Vector2(1f, 1f),
+                        new Vector2(0.5f, 0.5f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f));
+
+        StorageButton.GetComponent<Button>().onClick.AddListener(() => { Build.SetBuilding(StorageButton.name); });
+
+        CreateText(TextStorageButton,
+                    StorageButton,
+                    "Storage" +
+                    " 200W " +
+                    "100G",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+
+        createButton(HospitalButton,
+                        BuilderPanel,
+                        "Hospital",
+                        new Vector3(0f, 0f, 0f),
+                        new Vector2(0.5f, 1f),
+                        new Vector2(0f, 0.5f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f));
+
+        HospitalButton.GetComponent<Button>().onClick.AddListener(() => { Build.SetBuilding(HospitalButton.name); });
+
+        CreateText(TextHospitalButton,
+                    HospitalButton,
+                    "Hospital" +
+                    " 300W " +
+                    "300G",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+
+        createButton(BarracsButton,
+                        BuilderPanel,
+                        "Barracks",
+                        new Vector3(0f, 0f, 0f),
+                        new Vector2(1f, 0.5f),
+                        new Vector2(0.5f, 0f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f),
+                        new Vector2(0f, 0f));
+
+        BarracsButton.GetComponent<Button>().onClick.AddListener(() => { Build.SetBuilding(BarracsButton.name); });
+
+        CreateText(TextBarracsButton,
+                    BarracsButton,
+                    "Barracks" +
+                    " 400W " +
+                    "200G",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+
+        CreateText(SoldierText,
+                    SoldierPanel,
+                    "HP:",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+
+        CreateText(WarriroText,
+                    WarriorPanel,
+                    "HP: ",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
+
+        CreateText(RangeUnitText,
+                    RangeUnitPanel,
+                    "HP: ",
+                    ArialFont,
+                    new Vector2(1f, 1f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f),
+                    new Vector2(0f, 0f)
+                    );
 
 
+        BuilderPanel.SetActive(false);
+
+        SoldierText.GetComponent<Text>().color = Color.white;
+        WarriroText.GetComponent<Text>().color = Color.white;
+        RangeUnitText.GetComponent<Text>().color = Color.white;
     }
+
+    
+
+
 
     // Update is called once per frame
     void Update()
     {
+        if (GetComponent<GameControls>().selectedUnits.Count > 0)
+        {
+            SoldierText.GetComponent<Text>().text = "HP:   " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Health.ToString() + 
+                                     "              Damage:  " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Damage.ToString();
+
+            WarriroText.GetComponent<Text>().text = "HP:   " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Health.ToString() +
+                                      "             Damage:  " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Damage.ToString();
+
+            RangeUnitText.GetComponent<Text>().text = "HP:   " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Health.ToString() +
+                                       "             Damage:  " + GetComponent<GameControls>().selectedUnits[0].GetComponent<Unit>().Damage.ToString();
+        }
         
     }
 
 
-    /*  void CreateCanvas(GameObject Node, GameObject canvas, string name)
-      {
-          Node.name = name + "Pos";
-          canvas.transform.parent = Node.transform;
-          Node.transform.rotation = Quaternion.Euler(angleX, 0, 0);
-          canvas.name = name;
-          canvas.AddComponent<Canvas>();
-          canvas.AddComponent<GraphicRaycaster>();
-          canvas.AddComponent<CanvasScaler>();
-          Canvas can = canvas.GetComponent<Canvas>();
-          canvas.AddComponent<HorizontalLayoutGroup>();
-
-          canvas.GetComponent<HorizontalLayoutGroup>().spacing = 10;
-
-          can.renderMode = RenderMode.WorldSpace;
-          can.worldCamera = GetComponent<Camera>();
-
-          canvas.transform.rotation = Quaternion.Euler(angleX, 0, 0);
-
-          Node.SetActive(false);
-
-
-      }
-
-      void CreateText(GameObject text, GameObject parent, string name)
-      {
-          text.name = name + "Text";
-
-
-          text.transform.parent = parent.transform;
-
-          text.AddComponent<RectTransform>();
-          text.AddComponent<Text>().text = name;
-          text.GetComponent<Text>().font = ArialFont;
-          text.GetComponent<Text>().fontSize = 20;
-          text.GetComponent<Text>().color = Color.black;
-          text.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
-          RectTransform textSize = text.GetComponent<RectTransform>();
-          textSize.anchoredPosition3D = new Vector3(0f, 0f, 0f);
-          textSize.sizeDelta = new Vector2(0f, 0f);
-          textSize.localScale = new Vector3(1f, 1f, 1f);
-          textSize.anchorMin = new Vector2(0f, 0f);
-          textSize.anchorMax = new Vector2(1f, 1f);
-      }
-
-      void CreatePanel(GameObject panel, GameObject parent, string name, Sprite sprite)
-      {
-          panel.transform.parent = parent.transform;
-
-          panel.name = name;
-          panel.AddComponent<CanvasRenderer>();
-          panel.AddComponent<RectTransform>();
-          panel.AddComponent<Image>();
-
-          Image PanelImage = panel.GetComponent<Image>();
-
-          PanelImage.sprite = sprite;
-
-          PanelImage.color = new Color32(255, 255, 255, 255);
-
-
-      }*/
-
-
-
-
-   /* void CreateButton(GameObject canvas, GameObject button, GameObject text, string ButtText)
-    {
-
-        button.transform.parent = canvas.transform;
-
-
-        button.name = "Butt" + ButtText;
-        button.tag = "Button";
-        button.AddComponent<RectTransform>();
-        button.AddComponent<Button>();
-        button.AddComponent<Image>();
-        button.GetComponent<Button>().targetGraphic = button.GetComponent<Image>();
-
-        Button buttonB = button.GetComponent<Button>();
-
-
-
-
-
-        RectTransform buttonRectT = button.GetComponent<RectTransform>();
-        buttonRectT.sizeDelta = new Vector2(500f, 500f);
-        buttonRectT.localScale = new Vector3(1f, 1f, 1f);
-        buttonRectT.localPosition = new Vector3(0f, 0f, 0f);
-        buttonRectT.rotation = Quaternion.Euler(angleX, 0, 0);
-
-
-
-
-
-        /*
-                text.name = "Butt" + ButtText + "Text";
-
-
-                text.transform.parent = button.transform;
-
-
-                text.AddComponent<RectTransform>();
-                text.AddComponent<Text>().text = ButtText;
-                text.GetComponent<Text>().font = ArialFont;
-                text.GetComponent<Text>().fontSize = 30;
-                text.GetComponent<Text>().color = Color.yellow;
-                text.GetComponent<Text>().alignment = TextAnchor.MiddleCenter;
-                RectTransform textSize = text.GetComponent<RectTransform>();
-                textSize.anchoredPosition3D = new Vector3(0f, 0f, 0f);
-                textSize.sizeDelta = new Vector2(500f, 500f);
-                textSize.localScale = new Vector3(1f, 1f, 1f);
-                textSize.anchorMin = new Vector2(0.5f, 0.5f);
-                textSize.anchorMax = new Vector2(0.5f, 0.5f);
-                textSize.rotation = Quaternion.Euler(angleX, 0, 0);
-
-
-            
-
-
-    }
-
-    */
-
-
-
-
-
-
+    
 }

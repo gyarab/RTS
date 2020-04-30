@@ -1,0 +1,591 @@
+/target:library
+/nowarn:0169
+/out:Temp/Unity.InputSystem.dll
+/unsafe
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/PlayerScriptAssemblies/UnityEngine.UI.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AndroidJNIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AnimationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClothModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterInputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ClusterRendererModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DSPGraphModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.DirectorModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GameCenterModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.GridModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.HotReloadModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.IMGUIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.InputLegacyModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.LocalizationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.PhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.Physics2DModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ProfilerModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.StreamingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubstanceModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.SubsystemsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TLSModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextCoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.TilemapModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UIElementsNativeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UNETModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UmbraModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VFXModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VehiclesModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VideoModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
+/reference:Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll
+/reference:Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll
+/reference:Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll
+/reference:Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll
+/reference:D:/Programovani/Unity/RTS/Library/PackageCache/com.unity.burst@1.3.0-preview.3/Unity.Burst.Unsafe.dll
+/reference:D:/Programovani/Unity/RTS/Library/PackageCache/com.unity.collections@0.5.2-preview.8/System.Runtime.CompilerServices.Unsafe.dll
+/reference:D:/Programovani/Unity/RTS/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.2.0a7/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/define:UNITY_2020_2_0
+/define:UNITY_2020_2
+/define:UNITY_2020
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2020_1_OR_NEWER
+/define:UNITY_2020_2_OR_NEWER
+/define:PLATFORM_ARCH_64
+/define:UNITY_64
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_VIRTUALTEXTURING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_INPUT_SYSTEM
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:MIRROR
+/define:MIRROR_1726_OR_NEWER
+/define:MIRROR_3_0_OR_NEWER
+/define:MIRROR_3_12_OR_NEWER
+/define:MIRROR_4_0_OR_NEWER
+/define:MIRROR_5_0_OR_NEWER
+/define:MIRROR_6_0_OR_NEWER
+/define:MIRROR_7_0_OR_NEWER
+/define:MIRROR_8_0_OR_NEWER
+/define:MIRROR_9_0_OR_NEWER
+/define:MIRROR_10_0_OR_NEWER
+/define:MIRROR_11_0_OR_NEWER
+/define:UNITY_INPUT_SYSTEM_ENABLE_XR
+/define:UNITY_INPUT_SYSTEM_ENABLE_VR
+/define:UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
+/define:UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
+/define:UNITY_INPUT_SYSTEM_ENABLE_UI
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Composites\AxisComposite.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Composites\ButtonWithOneModifier.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Composites\ButtonWithTwoModifiers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Composites\Vector2Composite.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\IInputActionCollection.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\IInputInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputAction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionAsset.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionChange.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionMap.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionPhase.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionProperty.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionRebindingExtensions.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionReference.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionSetupExtensions.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionState.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionTrace.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputActionType.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputBinding.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputBindingComposite.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputBindingCompositeContext.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputBindingResolver.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputControlScheme.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\InputInteractionContext.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Interactions\HoldInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Interactions\MultiTapInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Interactions\PressInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Interactions\SlowTapInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Actions\Interactions\TapInteraction.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\AssemblyInfo.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\AnyKeyControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\AxisControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\ButtonControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\CommonUsages.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\DiscreteButtonControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\DoubleControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\DpadControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlAttribute.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlExtensions.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlLayout.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlLayoutAttribute.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlLayoutChange.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlList.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputControlPath.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\InputProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\IntegerControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\KeyControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\AxisDeadzoneProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\ClampProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\CompensateDirectionProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\CompensateRotationProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\EditorWindowSpaceProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\InvertProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\InvertVector2Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\InvertVector3Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\NormalizeProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\NormalizeVector2Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\NormalizeVector3Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\ScaleProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\ScaleVector2Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\ScaleVector3Processor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Processors\StickDeadzoneProcessor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\QuaternionControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\StickControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\TouchControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\TouchPhaseControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\TouchPressControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Vector2Control.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Controls\Vector3Control.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\DisableDeviceCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\EnableDeviceCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\EnableIMECompositionCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\IInputDeviceCommandInfo.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\InitiateUserAccountPairingCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\InputDeviceCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryCanRunInBackground.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryDimensionsCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryEditorWindowCoordinatesCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryEnabledStateCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryKeyNameCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryKeyboardLayoutCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryPairedUserAccountCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QuerySamplingFrequencyCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\QueryUserIdCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\RequestResetCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\RequestSyncCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\SetIMECursorPositionCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\SetSamplingFrequencyCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Commands\WarpMousePositionCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Gamepad.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Haptics\DualMotorRumble.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Haptics\DualMotorRumbleCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Haptics\IDualMotorRumble.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Haptics\IHaptics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\IInputUpdateCallbackReceiver.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\ITextInputReceiver.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\InputDevice.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\InputDeviceBuilder.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\InputDeviceChange.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\InputDeviceDescription.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\InputDeviceMatcher.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Joystick.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Keyboard.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Mouse.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Pen.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Pointer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Remote\InputRemoting.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Remote\RemoteInputPlayerConnection.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Sensor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\Touchscreen.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Devices\TrackedDevice.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionAssetManager.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionEditorToolbar.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionEditorWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionPropertiesView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionTreeView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputActionTreeViewItems.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\InputBindingPropertiesView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\NameAndParameterListView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\ParameterListView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetEditor\PropertiesViewBase.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetImporter\InputActionAssetEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetImporter\InputActionCodeGenerator.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetImporter\InputActionImporter.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\AssetImporter\InputActionImporterEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\ControlPicker\InputControlDropdownItem.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\ControlPicker\InputControlPathEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\ControlPicker\InputControlPicker.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\ControlPicker\InputControlPickerDropdown.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\ControlPicker\InputControlPickerState.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Debugger\InputActionDebuggerWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Debugger\InputDebuggerWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Debugger\InputDeviceDebuggerWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\DownloadableSample.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\EditorInputControlLayoutCache.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\InputDiagnostics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\InputParameterEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdown.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownDataSource.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownGUI.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownItem.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownState.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\CallbackDataSource.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\AdvancedDropdown\MultiLevelDataSource.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\EditorHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\GUIHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\InputActionSerializationHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\InputControlTreeView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\InputEventTreeView.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\InputStateWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\SerializedPropertyHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Internal\TreeViewHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\PropertyDrawers\InputActionDrawer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\PropertyDrawers\InputActionDrawerBase.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\PropertyDrawers\InputActionMapDrawer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\PropertyDrawers\InputActionPropertyDrawer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\PropertyDrawers\InputControlPathDrawer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Settings\EditorPlayerSettingHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Settings\InputEditorUserSettings.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Settings\InputSettingsBuildProvider.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Editor\Settings\InputSettingsProvider.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\ActionEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\DeltaStateEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\DeviceConfigurationEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\DeviceRemoveEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\IInputEventTypeInfo.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\IMECompositionEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\InputEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\InputEventBuffer.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\InputEventPtr.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\InputEventTrace.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\StateEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Events\TextEvent.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\IInputDiagnostics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\IInputRuntime.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputAnalytics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputExtensions.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputManager.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputMetrics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputSettings.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputSystem.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputSystemObject.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\InputUpdateType.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\NativeInputRuntime.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Android\AndroidAxis.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Android\AndroidGameController.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Android\AndroidKeyCode.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Android\AndroidSensors.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Android\AndroidSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\DualShock\DualShockGamepad.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\DualShock\DualShockGamepadHID.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\DualShock\DualShockSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\DualShock\IDualShockHaptics.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\EnhancedTouch\EnhancedTouchSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\EnhancedTouch\Finger.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\EnhancedTouch\Touch.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\EnhancedTouch\TouchHistory.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\EnhancedTouch\TouchSimulation.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\HID\HID.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\HID\HIDDescriptorWindow.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\HID\HIDParser.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\HID\HIDSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Linux\LinuxSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Linux\SDLDeviceBuilder.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\OnScreen\OnScreenButton.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\OnScreen\OnScreenControl.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\OnScreen\OnScreenStick.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\OnScreen\OnScreenSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\InputValue.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerInput.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerInputEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerInputManager.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerInputManagerEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerJoinBehavior.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\PlayerInput\PlayerNotifications.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\IStreamControllerAPI.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\SteamController.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\SteamControllerType.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\SteamHandle.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\SteamIGAConverter.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Steam\SteamSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Switch\SwitchProControllerHID.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Switch\SwitchSupportHID.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\BaseInputOverride.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\ExtendedPointerEventData.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\InputSystemUIInputModule.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\InputSystemUIInputModuleEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\MultiplayerEventSystem.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\NavigationModel.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\PointerModel.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\StandaloneInputModuleEditor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\TrackedDeviceRaycaster.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\UI\UISupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Users\InputUser.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Users\InputUserAccountHandle.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Users\InputUserChange.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Users\InputUserPairingOptions.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\Users\InputUserSettings.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\WebGL\WebGLGamepad.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\WebGL\WebGLJoystick.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\WebGL\WebGLSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XInput\IXboxOneRumble.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XInput\XInputController.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XInput\XInputControllerWindows.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XInput\XInputSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XInput\XboxGamepadMacOS.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Devices\GoogleVR.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Devices\Oculus.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Devices\OpenVR.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Devices\WindowsMR.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\GenericXRDevice.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Haptics\BufferedRumble.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Haptics\GetCurrentHapticStateCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Haptics\GetHapticCapabilitiesCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Haptics\SendBufferedHapticsCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\Haptics\SendHapticImpulseCommand.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\TrackedPoseDriver.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\XRLayoutBuilder.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\XR\XRSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\iOS\IOSGameController.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Plugins\iOS\iOSSupport.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\IInputStateCallbackReceiver.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\IInputStateChangeMonitor.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\IInputStateTypeInfo.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\InputState.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\InputStateBlock.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\InputStateBuffers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\State\InputStateHistory.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\ArrayHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\CSharpCodeHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\Comparers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\DelegateHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\DisplayStringFormatAttribute.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\DynamicBitfield.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\ExceptionHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\FourCC.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\InlinedArray.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\InternedString.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\JsonParser.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\MemoryHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\NameAndParameters.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\NamedValue.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\NumberHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\OneOrMore.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\PrimitiveValue.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\ReadOnlyArray.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\StringHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\Substring.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\TypeHelpers.cs
+D:\Programovani\Unity\RTS\Library\PackageCache\com.unity.inputsystem@1.0.0-preview.7\InputSystem\Utilities\TypeTable.cs

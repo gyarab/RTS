@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
 public class CameraController : MonoBehaviour
 {
@@ -15,12 +16,35 @@ public class CameraController : MonoBehaviour
     // limit kam se kamera muze pohybovat
     public Vector2 screenLimit;
 
+    public float team;
+
+
+   
+
 
     float rotY = 0f;
-    float rotX = 30f;
+   public float rotX = 30f;
+
+    private void Start()
+    {
+        foreach (var item in FindObjectsOfType<Unit>())
+        {
+            if (team == item.Team)
+            {
+                item.GetComponentInChildren<HPbar>().enabled = true;
+                
+                
+            }
+        }
+
         
+
+    }
+
     void Update()
     {
+
+        
         // pozice kamery
         Vector3 pos = transform.position;
         
@@ -46,25 +70,15 @@ public class CameraController : MonoBehaviour
             pos.x -= speed * Time.deltaTime;
         }
 
-        //rotace kamery
-        if (Input.GetKey("q"))
-        {
-            rotY -= rotspeed * Time.deltaTime;
-        }
-
-        if (Input.GetKey("e"))
-        {
-            rotY += rotspeed * Time.deltaTime;
-        }
-
+        
         //priblizeni oddaleni
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         pos.y += scroll * scrollspeed * 150f * Time.deltaTime;
 
         //maximalni pohyb kamery
-        pos.x = Mathf.Clamp(pos.x, -screenLimit.x, screenLimit.x);
-        pos.z = Mathf.Clamp(pos.z, -screenLimit.y, screenLimit.y);
-        pos.y = Mathf.Clamp(pos.y, 2, 11);
+        pos.x = Mathf.Clamp(pos.x, 6, screenLimit.x);
+        pos.z = Mathf.Clamp(pos.z, 0,200);
+        pos.y = Mathf.Clamp(pos.y, 15, 25);
 
         // meni polohu kamery v zavislosti na stisknuti tlacitek
         transform.position = pos;
